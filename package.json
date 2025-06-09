@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.21",
     "framer-motion": "^12.15.0",
     "lucide-react": "^0.513.0",
     "react": "^19.1.0",
