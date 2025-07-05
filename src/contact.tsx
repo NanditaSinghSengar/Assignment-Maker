@@ -430,7 +430,7 @@ const Contact: React.FC = () => {
               
                             <motion.a
                               whileHover={{ scale: 1.2 }}
-                              href="https://wa.me/918696333032"
+                              href="https://wa.me/918696333092"
                               target="_blank"
                               rel="noopener noreferrer"
                               aria-label="WhatsApp"
