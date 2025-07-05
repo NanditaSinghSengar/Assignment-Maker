@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
           whileHover={{ scale: 1.05 }}
         >
           <img
-            src={"./images/Logo.png"}
+            src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlnYIH74xgP5KlXGph-WGE7sBnDHITOa7DNw&s"}
             alt="Logo"
             className="object-contain h-36 w-auto sm:h-40 z-1"
           />
