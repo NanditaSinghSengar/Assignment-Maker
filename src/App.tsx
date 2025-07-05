@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
           <img
             src={"./images/Logo.png"}
             alt="Logo"
-            className="object-contain h-36 w-auto sm:h-40"
+            className="object-contain h-36 w-auto sm:h-40 z-1"
           />
         </motion.div>
 
@@ -368,7 +368,7 @@ const App: React.FC = () => {
           <div>
             <h3 className="text-white text-xl font-semibold mb-4">Contact Us</h3>
             <p>Email: <a href="mailto:support@assignmentmaker.com" className="hover:text-indigo-400 transition">support@assignmentmaker.com</a></p>
-            <p>Phone: <a href="tel:+1234567890" className="hover:text-indigo-400 transition">+91 869633092 </a></p>
+            <p>Phone: <a href="tel:+1234567890" className="hover:text-indigo-400 transition">+91 8696333092 </a></p>
             <div className="flex space-x-4 mt-4">
               <motion.a
                 whileHover={{ scale: 1.2 }}
@@ -410,7 +410,7 @@ const App: React.FC = () => {
 
               <motion.a
                 whileHover={{ scale: 1.2 }}
-                href="https://wa.me/91869633032"
+                href="https://wa.me/918696333092"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"

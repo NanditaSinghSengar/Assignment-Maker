@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import axios from 'axios'
 
 
 
@@ -14,7 +15,7 @@ const Navbar: React.FC = () => {
     { name: "Services", href: "/service" },
     { name: "Testimonials", href: "/" },
     { name: "Contact", href: "/contact" },
-    { name: "Connect on Whatsapp", href: "https://wa.me/91869633092" }
+    { name: "Connect on Whatsapp", href: "https://wa.me/918696333092" }
   ];
 
   return (
@@ -27,7 +28,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <motion.div
-          className="text-2xl font-bold text-white cursor-pointer w-28 sm:w-36 h-16 sm:h-20 overflow-hidden flex items-center"
+          className="https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fthe-assignment-maker&psig=AOvVaw3Kvs8QnTVUa773fF_GfHDH&ust=1751205497477000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCF8P2ilI4DFQAAAAAdAAAAABAEr"
           whileHover={{ scale: 1.05 }}
         >
           <img
@@ -173,11 +174,11 @@ const Contact: React.FC = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const response= await axios.post(
+    `${import.meta.env.VITE_API_URL}/api/contact`,
+    formData
+  );
+  console.log("hey")
 
       if (response.ok) {
         alert("Message sent successfully!");
@@ -387,7 +388,7 @@ const Contact: React.FC = () => {
                         <div>
                           <h3 className="text-white text-xl font-semibold mb-4">Contact Us</h3>
                           <p>Email: <a href="mailto:support@assignmentmaker.com" className="hover:text-indigo-400 transition">support@assignmentmaker.com</a></p>
-                          <p>Phone: <a href="tel:+1234567890" className="hover:text-indigo-400 transition">+91 869633092 </a></p>
+                          <p>Phone: <a href="tel:8696333092" className="hover:text-indigo-400 transition">+91 8696333092 </a></p>
                           <div className="flex space-x-4 mt-4">
                             <motion.a
                               whileHover={{ scale: 1.2 }}
@@ -429,7 +430,7 @@ const Contact: React.FC = () => {
               
                             <motion.a
                               whileHover={{ scale: 1.2 }}
-                              href="https://wa.me/91869633032"
+                              href="https://wa.me/918696333032"
                               target="_blank"
                               rel="noopener noreferrer"
                               aria-label="WhatsApp"
